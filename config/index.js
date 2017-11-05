@@ -28,12 +28,12 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {
-            '/api':{
-                target:'http://jsonplaceholder.typicode.com',
+            '/admin/*':{
+                target:'http://localhost:1337',
                 changeOrigin:true,
-                pathRewrite:{
-                    '/api':''
-                }
+//              pathRewrite:{
+//                  '/admin':''
+//              }
             },
             '/ms':{
                 target: 'https://www.easy-mock.com/mock/592501a391470c0ac1fab128',

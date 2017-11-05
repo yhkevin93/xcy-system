@@ -18,8 +18,12 @@ export default new Router({
                     component: resolve => require(['../components/page/Readme.vue'], resolve)
                 },
                 {
-                    path: '/basetable',
-                    component: resolve => require(['../components/page/BaseTable.vue'], resolve)
+                    path: '/register',
+                    component: resolve => require(['../components/page/Register.vue'], resolve)
+                },
+                {
+                    path: '/list',
+                    component: resolve => require(['../components/page/List.vue'], resolve)
                 },
                 {
                     path: '/vuetable',
@@ -42,8 +46,8 @@ export default new Router({
                     component: resolve => require(['../components/page/Upload.vue'], resolve)       // Vue-Core-Image-Upload组件
                 },
                 {
-                    path: '/basecharts',
-                    component: resolve => require(['../components/page/BaseCharts.vue'], resolve)   // vue-schart组件
+                    path: '/main',
+                    component: resolve => require(['../components/page/Main.vue'], resolve)   // vue-schart组件
                 },
                 {
                     path: '/drag',

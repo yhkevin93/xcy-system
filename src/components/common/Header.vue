@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <div class="logo">后台管理系统</div>
+        <div class="logo">新城油后台管理系统</div>
         <div class="user-info">
             <el-dropdown trigger="click" @command="handleCommand">
                 <span class="el-dropdown-link">
@@ -18,19 +18,19 @@
     export default {
         data() {
             return {
-                name: 'linxin'
+                name: 'xcy'
             }
         },
         computed:{
             username(){
-                let username = localStorage.getItem('ms_username');
+                let username = localStorage.getItem('username');
                 return username ? username : this.name;
             }
         },
         methods:{
             handleCommand(command) {
                 if(command == 'loginout'){
-                    localStorage.removeItem('ms_username')
+                    localStorage.removeItem('username')
                     this.$router.push('/login');
                 }
             }

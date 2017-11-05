@@ -8,7 +8,7 @@ import 'element-ui/lib/theme-default/index.css';    // 默认主题
 import "babel-polyfill";
 
 Vue.use(ElementUI);
-Vue.prototype.$axios = axios;
+Vue.prototype.$http = axios;
 new Vue({
     router,
     render: h => h(App)
